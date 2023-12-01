@@ -1,5 +1,6 @@
 import Notification from 'components/Notification/Notification';
 import React, { Component } from 'react';
+import css from './Statistics.module.css';
 
 export default class Statistics extends Component {
   render() {
@@ -8,11 +9,21 @@ export default class Statistics extends Component {
     }
     return (
       <>
-        <span>Good: {this.props.good}</span>
-        <span>Neutral: {this.props.neutral}</span>
-        <span>Bad: {this.props.bad}</span>
-        <span>Total: {this.props.total}</span>
-        <span>Positive feedback: {this.props.positivePercentage}</span>
+        <span className={css.statistic}>
+          <b>Good:</b> {this.props.good}
+        </span>
+        <span className={css.statistic}>
+          <b>Neutral:</b> {this.props.neutral}
+        </span>
+        <span className={css.statistic}>
+          <b>Bad:</b> {this.props.bad}
+        </span>
+        <span className={css.statistic}>
+          <b>Total:</b> {this.props.total}
+        </span>
+        <span className={css.statistic}>
+          <b>Positive feedback:</b> {this.props.positivePercentage}
+        </span>
       </>
     );
   }
