@@ -28,12 +28,17 @@ SESSIONS**
 ## Usage
 
 1. Clone this repository.
-2. Install the project's base dependencies using command ```shell npm install
+2. Install the project's base dependencies using command
 
-````
-3. Start development mode by running command ```shell
+```shell
+npm install
+```
+
+3. Start development mode by running command
+
+```shell
 npm start
-````
+```
 
 4. Go to [http://localhost:3000](http://localhost:3000) in your browser. This
    page will automatically reload after saving changes to the project files.
