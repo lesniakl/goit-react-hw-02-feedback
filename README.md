@@ -25,7 +25,7 @@ below:
 **PLEASE NOTE THAT AT THIS POINT YOU ARE NOT ABLE TO SAVE COLLECTED DATA BETWEEN
 SESSIONS**
 
-## Usage
+## Setup
 
 1. Clone this repository.
 2. Install the project's base dependencies using command
@@ -40,32 +40,5 @@ npm install
 npm start
 ```
 
-4. Go to [http://localhost:3000](http://localhost:3000) in your browser. This
-   page will automatically reload after saving changes to the project files.
-
-## Deployment
-
-Having cloned the repository, navigate to `Settings` > `Actions` > `General` as
-shown below.
-
-![Settings GitHub Actions permissions step 1](./assets/gh-actions-perm-1.png)
-
-Find the `«Workflow permissions»` section, choose `«Read and write permissions»`
-and click on the checkbox below. This will allow deployment process to be
-automated.
-
-![Settings GitHub Actions permissions step 2](./assets/gh-actions-perm-2.png)
-
-The production version of the project will automatically be linted, built, and
-deployed to GitHub Pages, in the `gh-pages` branch, every time the `main` branch
-is updated. For example, after a direct push or an accepted pull request. To do
-this, you need to edit the `homepage` field in the `package.json` file,
-replacing `your_username` and `your_repo_name` with your own, and submit the
-changes to GitHub.
-
-```json
-"homepage": "https://your_username.github.io/your_repo_name/"
-```
-
-Now the only thing left to do is to build and deploy from the `/root` folder of
-the `gh-pages` branch, if this was not done automatically.
+4. You will now be able to access the app by going to
+   [http://localhost:3000](http://localhost:3000) in your browser.
